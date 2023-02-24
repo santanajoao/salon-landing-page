@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import greenSalonLogo from '../../assets/green-salon-logo.webp';
 import styles from './style.module.css';
+import MenuContext from '../../context/MenuContext';
 import { BsList, BsXLg } from 'react-icons/bs';
 
 const navLinks = [
@@ -12,7 +13,7 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
 
   const navClassName = `${styles.nav} ${isMenuOpen && styles.visible}`;
 
