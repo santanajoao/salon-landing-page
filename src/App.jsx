@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Header from './components/Header';
 import StartSection from './components/StartSection';
+import AboutSection from './components/AboutSection';
 import MenuContext from './context/MenuContext';
 import styles from './App.module.css';
 
@@ -12,6 +13,7 @@ export default function App() {
     <div className={AppClassName}>
       <Header />
       <StartSection />
+      <AboutSection />
     </div>
   );
 }
