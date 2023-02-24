@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import greenSalonLogo from '../../assets/green-salon-logo.webp';
 import styles from './style.module.css';
-import { BsList, BsX } from 'react-icons/bs';
+import { BsList, BsXLg } from 'react-icons/bs';
 
 const navLinks = [
   { href: '#start', text: 'Início' },
@@ -12,6 +12,10 @@ const navLinks = [
 ];
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navClassName = `${styles.nav} ${isMenuOpen && styles.visible}`;
+
   return (
     <header className={styles.header}>
       <img
@@ -20,18 +24,30 @@ export default function Header() {
         alt="beautysalon logo"
       />
 
-      <button type="button" className={styles.menu_button}>
+      <button
+        type="button"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className={styles.menu_button}
+      >
         <BsList className={styles.menu_icon} />
       </button>
 
-      <nav className={styles.nav}>
-        <button type="button" className={styles.close_button}>
-          <BsX className={styles.close_icon} />
+      <nav className={navClassName}>
+        <button
+          type="button"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className={styles.close_button}
+        >
+          <BsXLg className={styles.close_icon} />
         </button>
 
         <ul className={styles.list}>
           {navLinks.map(({ href, text }) => (
-            <li className={styles.list_item}>
+            <li
+              key={text}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className={styles.list_item}
+            >
               <a href={href} className={styles.ancor}>
                 {text}
               </a>

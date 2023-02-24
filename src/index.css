@@ -6,6 +6,9 @@
 
 :root {
   font-size: 62.5%;
+  --primary-color: #69b99d;
+  --light-gray: #e4e4e4;
+  --dark-green: #0f241d;
 }
 
 body {
