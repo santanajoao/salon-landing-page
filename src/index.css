@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +13,14 @@
   --primary-color: #69b99d;
   --light-gray: #e4e4e4;
   --dark-green: #0f241d;
+  --gray: #767676;
 }
 
 body {
   font-size: 1.6rem;
 }
+
+/* .App {
+  overflow: hidden;
+  height: 100vh;
+} */

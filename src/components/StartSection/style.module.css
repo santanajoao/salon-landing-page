@@ -1,0 +1,55 @@
+.section {
+  display: flex;
+  padding: 3.2rem 0;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+}
+
+.text_content {
+  margin-top: 3.2rem;
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  text-align: center;
+  color: #000;
+}
+
+.paragraph {
+  margin-top: 1.6rem;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--gray);
+}
+
+.ancor {
+  text-decoration: none;
+  margin-top: 3.2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: #f9f9f9;
+  display: inline-block;
+  background-color: var(--primary-color);
+  border-radius: 0.4rem;
+  padding: 1.75rem 3.2rem;
+}
