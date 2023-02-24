@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './style.module.css';
 import image from '../../assets/start-image.webp';
+import GradientLine from '../GradientLine';
 
 export default function StartSection() {
   return (
@@ -20,6 +21,7 @@ export default function StartSection() {
           Agendar um horário
         </a>
       </div>
+      <GradientLine />
     </section>
   );
 }

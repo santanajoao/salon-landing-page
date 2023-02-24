@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutImage from '../../assets/about-image.webp';
+import GradientLine from '../GradientLine';
 import styles from './style.module.css';
 
 export default function AboutSection() {
@@ -29,7 +30,7 @@ export default function AboutSection() {
           dolor. Nullam eget dui at sem ullamcorper luctus.
         </p>
       </div>
-      <hr className={styles.hr} />
+      <GradientLine />
     </section>
   );
 }
