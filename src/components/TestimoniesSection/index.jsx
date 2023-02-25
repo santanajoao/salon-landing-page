@@ -19,13 +19,15 @@ const testimonyList = [
   },
 ];
 
-function renderButtons(ammount, onClick) {
+function renderButtons(ammount, onClick, selected) {
   const buttons = [];
-  for (let counter = 0; counter < ammount; counter += 1) {
+  for (let index = 0; index < ammount; index += 1) {
+    const backgroundColor = index === selected ? '#69b99d' : '#e4e4e4';
     buttons.push(
       <button
         type="button"
-        onClick={() => onClick(counter)}
+        style={{ backgroundColor: backgroundColor }}
+        onClick={() => onClick(index)}
         className={styles.button}
       />
     );
@@ -46,7 +48,7 @@ export default function TestimoniesSection() {
         <ul>
           {testimonyList.map(({ image, name, testimony }, index) => (
             <li
-              style={index === selected ? { display: 'flex' } : {}}
+              style={{ display: index === selected ? 'flex' : 'none' }}
               className={styles.list_item}
             >
               <TestimonyCard image={image} name={name} testimony={testimony} />
@@ -55,7 +57,7 @@ export default function TestimoniesSection() {
         </ul>
 
         <div className={styles.buttons_wrapper}>
-          {renderButtons(2, setSelected)}
+          {renderButtons(2, setSelected, selected)}
         </div>
       </div>
     </section>
