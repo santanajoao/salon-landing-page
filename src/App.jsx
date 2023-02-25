@@ -4,6 +4,7 @@ import StartSection from './components/StartSection';
 import AboutSection from './components/AboutSection';
 import MenuContext from './context/MenuContext';
 import styles from './App.module.css';
+import ServicesSection from './components/ServicesSection';
 
 export default function App() {
   const { isMenuOpen } = useContext(MenuContext);
@@ -14,6 +15,7 @@ export default function App() {
       <Header />
       <StartSection />
       <AboutSection />
+      <ServicesSection />
     </div>
   );
 }
