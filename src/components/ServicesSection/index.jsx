@@ -40,8 +40,8 @@ export default function ServicesSection() {
       </div>
 
       <ul className={styles.list}>
-        {servicesList.map(({ image, service, description }) => (
-          <li className={styles.list_item}>
+        {servicesList.map(({ image, service, description }, index) => (
+          <li key={index} className={styles.list_item}>
             <div className={styles.card}>
               <img src={image} className={styles.image} alt="" />
               <h2 className={styles.card_title}>{service}</h2>
