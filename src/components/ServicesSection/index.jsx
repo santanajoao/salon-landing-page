@@ -3,6 +3,7 @@ import womanHair from '../../assets/woman-hair.webp';
 import scissor from '../../assets/scissor.webp';
 import hairProducts from '../../assets/hair-products.webp';
 import styles from './style.module.css';
+import GradientLine from '../GradientLine';
 
 const servicesList = [
   {
@@ -49,6 +50,7 @@ export default function ServicesSection() {
           </li>
         ))}
       </ul>
+      <GradientLine />
     </section>
   );
 }

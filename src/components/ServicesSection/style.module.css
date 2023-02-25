@@ -6,6 +6,15 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--white-bg);
+  position: relative;
+}
+
+.section hr {
+  background: linear-gradient(
+    270deg,
+    #69b99d 0%,
+    rgba(204, 244, 230, 0.34) 100%
+  );
 }
 
 .section__title {
