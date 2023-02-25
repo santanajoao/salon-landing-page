@@ -5,7 +5,7 @@ import styles from './style.module.css';
 
 export default function AboutSection() {
   return (
-    <section className={styles.section}>
+    <section id="about" className={styles.section}>
       <img src={aboutImage} className={styles.image} alt="" />
       <div className={styles.text_content}>
         <h1 className={styles.title}>Sobre nós</h1>

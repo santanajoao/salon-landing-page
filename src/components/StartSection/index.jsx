@@ -5,7 +5,7 @@ import GradientLine from '../GradientLine';
 
 export default function StartSection() {
   return (
-    <section className={styles.section}>
+    <section id="start" className={styles.section}>
       <img
         src={image}
         className={styles.image}
