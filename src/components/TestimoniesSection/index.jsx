@@ -39,7 +39,7 @@ export default function TestimoniesSection() {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className={styles.section}>
+    <section id="testimonies" className={styles.section}>
       <h1 className={styles.section_title}>
         Depoimentos de quem já passou por aqui
       </h1>

@@ -24,7 +24,7 @@ const contactInfos = [
 
 export default function ContactSection() {
   return (
-    <section className={styles.section}>
+    <section id="contact" className={styles.section}>
       <h1 className={styles.title}>Entre em contato com a gente!</h1>
       <p className={styles.paragraph}>
         Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir
