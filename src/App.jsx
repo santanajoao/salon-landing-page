@@ -7,6 +7,7 @@ import styles from './App.module.css';
 import ServicesSection from './components/ServicesSection';
 import TestimoniesSection from './components/TestimoniesSection';
 import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 
 export default function App() {
   const { isMenuOpen } = useContext(MenuContext);
@@ -20,6 +21,7 @@ export default function App() {
       <ServicesSection />
       <TestimoniesSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 }
