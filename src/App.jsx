@@ -6,6 +6,7 @@ import MenuContext from './context/MenuContext';
 import styles from './App.module.css';
 import ServicesSection from './components/ServicesSection';
 import TestimoniesSection from './components/TestimoniesSection';
+import ContactSection from './components/ContactSection';
 
 export default function App() {
   const { isMenuOpen } = useContext(MenuContext);
@@ -18,6 +19,7 @@ export default function App() {
       <AboutSection />
       <ServicesSection />
       <TestimoniesSection />
+      <ContactSection />
     </div>
   );
 }

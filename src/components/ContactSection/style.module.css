@@ -1,0 +1,71 @@
+.section {
+  background-color: var(--white-bg);
+  padding: 8rem 2.4rem;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
+.paragraph {
+  margin-top: 1.6rem;
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--gray);
+}
+
+.ancor_button {
+  text-decoration: none;
+  margin-top: 3.2rem;
+  color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  background-color: var(--primary-color);
+  border-radius: 0.4rem;
+  padding: 1.75rem 3.2rem;
+}
+
+.ancor_button__text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+.ancor_button__icon {
+  font-size: 2.4rem;
+}
+
+.contact_infos {
+  margin-top: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  font-style: normal;
+}
+
+.contact_wrapper {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contact_icon {
+  font-size: 2.4rem;
+  color: var(--primary-color);
+}
+
+.contact_ancor {
+  color: var(--gray);
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-decoration: none;
+}
