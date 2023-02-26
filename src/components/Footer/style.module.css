@@ -24,6 +24,7 @@
   margin-top: 3.2rem;
   display: flex;
   gap: 3.2rem;
+  align-items: center;
 }
 
 .social_ancor {
