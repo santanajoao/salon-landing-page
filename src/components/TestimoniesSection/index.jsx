@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
-import TestimonyCard from './TestimonyCard';
+import React from 'react';
 import wanessaImage from '../../assets/wanessa-profile.webp';
 import lunaImage from '../../assets/luna-profile.webp';
+import womanProfile from '../../assets/woman-profile.webp';
+import manProfile from '../../assets/man-profile.webp';
+import outlineProfile from '../../assets/outline-profile.webp';
 import styles from './style.module.css';
+import Carrousel from './Carrousel';
 
 const testimonyList = [
   {
@@ -17,51 +20,40 @@ const testimonyList = [
     testimony:
       'Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.',
   },
+  {
+    image: manProfile,
+    name: 'Jhon Doe',
+    testimony:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quas distinctio voluptas similique reiciendis vero vel voluptatum voluptates fugiat quam ipsum odio error, molestiae enim iusto eligendi laudantium expedita magnam.',
+  },
+  {
+    image: outlineProfile,
+    name: 'Rob Algernon',
+    testimony:
+      'Hic quas distinctio voluptas similique reiciendis vero vel voluptatum voluptates fugiat quam ipsum odio error, molestiae enim iusto eligendi laudantium expedita magnam.',
+  },
+  {
+    image: manProfile,
+    name: 'Alexandre Benjamine',
+    testimony:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quas distinctio voluptas similique reiciendis vero vel voluptatum voluptates fugiat quam ipsum odio error, molestiae enim iusto eligendi laudantium expedita magnam.',
+  },
+  {
+    image: womanProfile,
+    name: 'Harriett Bernetta',
+    testimony:
+      'Hic quas distinctio voluptas similique reiciendis vero vel voluptatum voluptates fugiat quam ipsum odio error, molestiae enim iusto eligendi laudantium expedita magnam.',
+  },
 ];
 
-function renderButtons(ammount, onClick, selected) {
-  const buttons = [];
-  for (let index = 0; index < ammount; index += 1) {
-    const backgroundColor = index === selected ? '#69b99d' : '#e4e4e4';
-    buttons.push(
-      <button
-        key={index}
-        type="button"
-        style={{ backgroundColor: backgroundColor }}
-        onClick={() => onClick(index)}
-        className={styles.button}
-      />
-    );
-  }
-  return buttons;
-}
-
 export default function TestimoniesSection() {
-  const [selected, setSelected] = useState(0);
-
   return (
     <section id="testimonies" className={styles.section}>
       <h1 className={styles.section_title}>
         Depoimentos de quem já passou por aqui
       </h1>
 
-      <div className={styles.carrousel}>
-        <ul>
-          {testimonyList.map(({ image, name, testimony }, index) => (
-            <li
-              key={index}
-              style={{ display: index === selected ? 'flex' : 'none' }}
-              className={styles.list_item}
-            >
-              <TestimonyCard image={image} name={name} testimony={testimony} />
-            </li>
-          ))}
-        </ul>
-
-        <div className={styles.buttons_wrapper}>
-          {renderButtons(2, setSelected, selected)}
-        </div>
-      </div>
+      <Carrousel testimonies={testimonyList} />
     </section>
   );
 }

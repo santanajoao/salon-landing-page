@@ -1,0 +1,32 @@
+.list_item {
+  list-style: none;
+  display: flex;
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.8rem;
+  min-height: 26.4rem;
+  max-height: 30.2rem;
+}
+
+.buttons_wrapper {
+  display: flex;
+  width: fit-content;
+  gap: 0.8rem;
+}
+
+.button {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  gap: 3.2rem;
+}
