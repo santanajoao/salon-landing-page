@@ -41,8 +41,8 @@ export default function ContactSection() {
       </a>
 
       <address className={styles.contact_infos}>
-        {contactInfos.map(({ text, link, Icon }) => (
-          <div className={styles.contact_wrapper}>
+        {contactInfos.map(({ text, link, Icon }, index) => (
+          <div key={index} className={styles.contact_wrapper}>
             <Icon className={styles.contact_icon} />
             <a
               href={link}

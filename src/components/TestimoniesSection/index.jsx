@@ -25,6 +25,7 @@ function renderButtons(ammount, onClick, selected) {
     const backgroundColor = index === selected ? '#69b99d' : '#e4e4e4';
     buttons.push(
       <button
+        key={index}
         type="button"
         style={{ backgroundColor: backgroundColor }}
         onClick={() => onClick(index)}
@@ -48,6 +49,7 @@ export default function TestimoniesSection() {
         <ul>
           {testimonyList.map(({ image, name, testimony }, index) => (
             <li
+              key={index}
               style={{ display: index === selected ? 'flex' : 'none' }}
               className={styles.list_item}
             >
