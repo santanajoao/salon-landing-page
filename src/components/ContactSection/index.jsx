@@ -25,20 +25,22 @@ const contactInfos = [
 export default function ContactSection() {
   return (
     <section id="contact" className={styles.section}>
-      <h1 className={styles.title}>Entre em contato com a gente!</h1>
-      <p className={styles.paragraph}>
-        Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir
-        suas críticas e sugestões.
-      </p>
-      <a
-        href="http://"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={styles.ancor_button}
-      >
-        <BsWhatsapp className={styles.ancor_button__icon} />
-        <span className={styles.ancor_button__text}>Entrar em contato</span>
-      </a>
+      <div className={ styles.left_wrapper }>
+        <h1 className={styles.title}>Entre em contato com a gente!</h1>
+        <p className={styles.paragraph}>
+          Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir
+          suas críticas e sugestões.
+        </p>
+        <a
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.ancor_button}
+        >
+          <BsWhatsapp className={styles.ancor_button__icon} />
+          <span className={styles.ancor_button__text}>Entrar em contato</span>
+        </a>
+      </div>
 
       <address className={styles.contact_infos}>
         {contactInfos.map(({ text, link, Icon }, index) => (
