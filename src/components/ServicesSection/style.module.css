@@ -88,3 +88,41 @@
   margin-top: 1.2rem;
   color: var(--gray);
 }
+
+@media screen and (min-width: 1000px) {
+  .section {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .text_content {
+    max-width: 39%;
+  }
+
+  .section__title {
+    text-align: center;
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+  }
+
+  .section__paragraph {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-top: 1.2rem;
+  }
+
+  .list {
+    margin-top: 6.4rem;
+    flex-direction: row;
+    gap: 3.2rem;
+    justify-content: center;
+  }
+
+  .card {
+    margin-top: 0;
+    padding: 5.8rem 4.8rem;
+    max-width: 37.6rem;
+    min-height: 37.5rem;
+  }
+}
