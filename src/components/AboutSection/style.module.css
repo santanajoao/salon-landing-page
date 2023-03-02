@@ -66,5 +66,6 @@
   .paragraph {
     line-height: 2.4rem;
     margin-top: 2.4rem;
+    max-width: 60ch;
   }
 }
