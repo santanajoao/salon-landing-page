@@ -102,4 +102,8 @@
     padding: 1.4rem 3.2rem;
     margin-top: 2.4rem;
   }
+
+  .ancor:hover {
+    filter: brightness(0.95);
+  }
 }

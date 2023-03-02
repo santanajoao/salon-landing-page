@@ -52,4 +52,16 @@
   .social_ancor_wrapper {
     margin: 0;
   }
+
+  .social_ancor:first-of-type:hover {
+    color: magenta;
+  }
+
+  .social_ancor:nth-of-type(2):hover {
+    color: dodgerblue;
+  }
+
+  .social_ancor:nth-of-type(3):hover {
+    color: red;
+  }
 }
