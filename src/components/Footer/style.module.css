@@ -35,3 +35,21 @@
 .social_icon {
   font-size: 2.4rem;
 }
+
+@media screen and (min-width: 1000px) {
+  .footer {
+    padding: 6rem 12.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 25rem;
+    height: 3.8rem;
+  }
+
+  .social_ancor_wrapper {
+    margin: 0;
+  }
+}

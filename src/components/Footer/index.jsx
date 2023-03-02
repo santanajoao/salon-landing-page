@@ -10,11 +10,15 @@ import whiteLogo from '../../assets/white-salon-logo.webp';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <img src={whiteLogo} className={styles.logo} alt="beautysalon logo" />
-      <div className={styles.rights}>
-        <span>&copy; 2022 Beautysalon.</span>
-        <p>Todos os direitos reservados</p>
+
+      <div className={styles.left_wrapper}>
+        <img src={whiteLogo} className={styles.logo} alt="beautysalon logo" />
+        <div className={styles.rights}>
+          <span>&copy; 2022 Beautysalon.</span>
+          <p>Todos os direitos reservados</p>
+        </div>
       </div>
+
       <div className={styles.social_ancor_wrapper}>
         <a
           href="https://www.instagram.com/"
