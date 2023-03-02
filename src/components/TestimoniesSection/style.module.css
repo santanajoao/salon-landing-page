@@ -15,3 +15,10 @@
   line-height: 4.5rem;
   color: black;
 }
+
+@media screen and (min-width: 1000px) {
+  .section_title {
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+  }
+}

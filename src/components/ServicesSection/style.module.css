@@ -91,7 +91,7 @@
 
 @media screen and (min-width: 1000px) {
   .section {
-    padding: 1rem;
+    padding: 3rem 1rem;
     justify-content: center;
   }
 

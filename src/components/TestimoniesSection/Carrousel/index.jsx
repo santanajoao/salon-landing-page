@@ -2,11 +2,7 @@ import React, { useEffect, useState } from 'react';
 import TestimonyCard from '../TestimonyCard';
 import styles from './style.module.css';
 
-const maxDisplayedCards = 2;
-const maxCardWidth = 544;
-const cardsGap = 32;
-const padding = 24 * 2;
-const cardsSpace = maxCardWidth * maxDisplayedCards + padding + cardsGap;
+const cardsSpace = 1000;
 
 function renderButtons(quantity, onClick, selected, className) {
   const buttons = [];
