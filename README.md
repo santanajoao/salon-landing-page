@@ -1,6 +1,6 @@
 # Beautysalon landing page
 
-Uma landing page responsiva para um salão fictício. Esse projeto foi desenvolvido seguindo um protótipo do figma disponibilizado pela rocketseat.
+Uma landing page responsiva para um salão fictício estilizada utilizando a abordagem _mobile first_. Esse projeto foi desenvolvido seguindo um protótipo do figma disponibilizado pela rocketseat.
 
 <img src="./readme/app-screenshot.png" alt="Captura de tela dessa aplicação em funcionamento">
 
