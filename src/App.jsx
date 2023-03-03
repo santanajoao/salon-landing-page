@@ -16,11 +16,13 @@ export default function App() {
   return (
     <div className={AppClassName}>
       <Header />
-      <StartSection />
-      <AboutSection />
-      <ServicesSection />
-      <TestimoniesSection />
-      <ContactSection />
+      <main>
+        <StartSection />
+        <AboutSection />
+        <ServicesSection />
+        <TestimoniesSection />
+        <ContactSection />
+      </main>
       <Footer />
     </div>
   );
