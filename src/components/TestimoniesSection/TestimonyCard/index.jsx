@@ -8,6 +8,7 @@ export default function TestimonyCard({ testimony, image, name }) {
       <span className={styles.profile_wrapper}>
         <img
           src={image}
+          loading="lazy"
           className={styles.image}
           alt={`Imagem de perfil de ${name}`}
         />

@@ -6,7 +6,12 @@ import styles from './style.module.css';
 export default function AboutSection() {
   return (
     <section id="about" className={styles.section}>
-      <img src={aboutImage} className={styles.image} alt="" />
+      <img
+        src={aboutImage}
+        loading="lazy"
+        className={styles.image}
+        alt="três mulheres sorrindo e segurando ferramentas de salão"
+      />
       <div className={styles.text_content}>
         <h1 className={styles.title}>Sobre nós</h1>
         <p className={styles.paragraph}>

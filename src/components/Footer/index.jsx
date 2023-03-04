@@ -12,7 +12,12 @@ export default function Footer() {
     <footer className={styles.footer}>
 
       <div className={styles.left_wrapper}>
-        <img src={whiteLogo} className={styles.logo} alt="beautysalon logo" />
+        <img
+          src={whiteLogo}
+          loading="lazy"
+          className={styles.logo}
+          alt="beautysalon logo"
+        />
         <div className={styles.rights}>
           <span>&copy; 2022 Beautysalon.</span>
           <p>Todos os direitos reservados</p>

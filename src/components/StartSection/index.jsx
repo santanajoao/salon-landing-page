@@ -8,6 +8,7 @@ export default function StartSection() {
     <section id="start" className={styles.section}>
       <img
         src={image}
+        loading="lazy"
         className={styles.image}
         alt="Mulheres em um salão. Uma está atendendo com uma escova e um secador de cabelo na mão"
       />

@@ -21,6 +21,7 @@ export default function Header() {
     <header className={styles.header}>
       <img
         src={greenSalonLogo}
+        loading="lazy"
         className={styles.logo}
         alt="beautysalon logo"
       />

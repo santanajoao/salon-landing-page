@@ -43,7 +43,12 @@ export default function ServicesSection() {
         {servicesList.map(({ image, service, description }, index) => (
           <li key={index} className={styles.list_item}>
             <div className={styles.card}>
-              <img src={image} className={styles.image} alt="" />
+              <img
+                src={image}
+                loading="lazy"
+                className={styles.image} 
+                alt="ícone representativo do card"
+              />
               <h2 className={styles.card_title}>{service}</h2>
               <p className={styles.card_paragraph}>{description}</p>
             </div>
