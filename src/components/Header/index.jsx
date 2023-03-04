@@ -27,7 +27,7 @@ export default function Header() {
 
       <button
         type="button"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        onClick={() => setIsMenuOpen(true)}
         className={styles.menu_button}
       >
         <BsList className={styles.menu_icon} />
@@ -36,7 +36,7 @@ export default function Header() {
       <nav className={navClassName}>
         <button
           type="button"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={() => setIsMenuOpen(false)}
           className={styles.close_button}
         >
           <BsXLg className={styles.close_icon} />
@@ -46,7 +46,7 @@ export default function Header() {
           {navLinks.map(({ href, text }) => (
             <li
               key={text}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={() => setIsMenuOpen(false)}
               className={styles.list_item}
             >
               <a href={href} className={styles.ancor}>
