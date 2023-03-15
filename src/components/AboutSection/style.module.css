@@ -15,7 +15,7 @@
 }
 
 .title {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 3rem;
   line-height: 4.5rem;
@@ -23,7 +23,7 @@
 }
 
 .paragraph {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.6rem;
