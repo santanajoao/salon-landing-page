@@ -1,4 +1,5 @@
 import React from 'react';
+import { nanoid } from 'nanoid';
 import { BsTelephone, BsWhatsapp } from 'react-icons/bs';
 import { SlLocationPin } from 'react-icons/sl';
 import { CiMail } from 'react-icons/ci';
@@ -25,7 +26,7 @@ const contactInfos = [
 export default function ContactSection() {
   return (
     <section id="contact" className={styles.section}>
-      <div className={ styles.left_wrapper }>
+      <div className={styles.left_wrapper}>
         <h1 className={styles.title}>Entre em contato com a gente!</h1>
         <p className={styles.paragraph}>
           Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir
@@ -43,8 +44,8 @@ export default function ContactSection() {
       </div>
 
       <address className={styles.contact_infos}>
-        {contactInfos.map(({ text, link, Icon }, index) => (
-          <div key={index} className={styles.contact_wrapper}>
+        {contactInfos.map(({ text, link, Icon }) => (
+          <div key={nanoid()} className={styles.contact_wrapper}>
             <Icon className={styles.contact_icon} />
             <a
               href={link}

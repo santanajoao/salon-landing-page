@@ -1,4 +1,5 @@
 import React from 'react';
+import { nanoid } from 'nanoid';
 import womanHair from '../../assets/woman-hair.webp';
 import scissor from '../../assets/scissor.webp';
 import hairProducts from '../../assets/hair-products.webp';
@@ -40,13 +41,13 @@ export default function ServicesSection() {
       </div>
 
       <ul className={styles.list}>
-        {servicesList.map(({ image, service, description }, index) => (
-          <li key={index} className={styles.list_item}>
+        {servicesList.map(({ image, service, description }) => (
+          <li key={nanoid()} className={styles.list_item}>
             <div className={styles.card}>
               <img
                 src={image}
                 loading="lazy"
-                className={styles.image} 
+                className={styles.image}
                 alt="ícone representativo do card"
               />
               <h2 className={styles.card_title}>{service}</h2>

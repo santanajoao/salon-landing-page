@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid';
 import React, { useEffect, useState } from 'react';
 import TestimonyCard from '../TestimonyCard';
 import styles from './style.module.css';
@@ -55,8 +56,8 @@ export default function Carrousel({ testimonies }) {
   return (
     <div className={styles.carrousel}>
       <ul className={styles.list}>
-        {visibleTestimonies.map(({ image, name, testimony }, index) => (
-          <li key={index} className={styles.list_item}>
+        {visibleTestimonies.map(({ image, name, testimony }) => (
+          <li key={nanoid()} className={styles.list_item}>
             <TestimonyCard image={image} name={name} testimony={testimony} />
           </li>
         ))}
