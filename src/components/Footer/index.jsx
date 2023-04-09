@@ -10,7 +10,6 @@ import whiteLogo from '../../assets/white-salon-logo.webp';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-
       <div className={styles.left_wrapper}>
         <img
           src={whiteLogo}
@@ -32,6 +31,7 @@ export default function Footer() {
           className={styles.social_ancor}
         >
           <AiOutlineInstagram className={styles.social_icon} />
+          <span className="screen-readers-only">Visite nosso instagram</span>
         </a>
         <a
           href="https://pt-br.facebook.com/"
@@ -40,6 +40,7 @@ export default function Footer() {
           className={styles.social_ancor}
         >
           <AiOutlineFacebook className={styles.social_icon} />
+          <span className="screen-readers-only">Visite nosso facebook</span>
         </a>
         <a
           href="https://www.youtube.com/?gl=BR&hl=PT"
@@ -48,6 +49,7 @@ export default function Footer() {
           className={styles.social_ancor}
         >
           <AiOutlineYoutube className={styles.social_icon} />
+          <span className="screen-readers-only">Visite nosso youtube</span>
         </a>
       </div>
     </footer>
