@@ -15,6 +15,7 @@
   display: flex;
   background-color: transparent;
   border: none;
+  z-index: 10;
 }
 
 .menu_icon {
@@ -37,17 +38,6 @@
 
 .visible {
   display: flex;
-}
-
-.close_button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 2.8rem 2.7rem;
-  display: flex;
-  border: none;
-  background-color: transparent;
-  height: fit-content;
 }
 
 .close_icon {

@@ -28,21 +28,23 @@ export default function Header() {
 
       <button
         type="button"
-        onClick={() => setIsMenuOpen(true)}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
         className={styles.menu_button}
+        aria-expanded={isMenuOpen ? 'true' : 'false'}
+        aria-controls="header__navigation"
       >
-        <BsList className={styles.menu_icon} />
+        {isMenuOpen ? (
+          <BsXLg className={styles.close_icon} />
+        ) : (
+          <BsList className={styles.menu_icon} />
+        )}
+
+        <span className="screen-readers-only">
+          {isMenuOpen ? 'Fechar navegação' : 'Abrir navegação'}
+        </span>
       </button>
 
-      <nav className={navClassName}>
-        <button
-          type="button"
-          onClick={() => setIsMenuOpen(false)}
-          className={styles.close_button}
-        >
-          <BsXLg className={styles.close_icon} />
-        </button>
-
+      <nav id="header__navigation" className={navClassName}>
         <ul className={styles.list}>
           {navLinks.map(({ href, text }) => (
             <li
