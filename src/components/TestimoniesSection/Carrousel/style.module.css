@@ -12,18 +12,29 @@
   max-height: 30.2rem;
 }
 
-.buttons_wrapper {
+.radios_wrapper {
   display: flex;
   width: fit-content;
   gap: 0.8rem;
 }
 
-.button {
+.radio {
+  all: unset;
+  background-color: #e4e4e4;
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 50%;
-  border: none;
   cursor: pointer;
+  display: inline-block;
+}
+
+.radio:focus {
+  outline: 1px solid black;
+  border: none;
+}
+
+.radio:checked {
+  background-color: #69b99d;
 }
 
 .list {

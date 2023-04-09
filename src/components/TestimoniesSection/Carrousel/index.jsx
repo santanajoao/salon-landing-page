@@ -5,22 +5,29 @@ import styles from './style.module.css';
 
 const cardsSpace = 1000;
 
-function renderButtons(quantity, onClick, selected, className) {
-  const buttons = [];
+function renderRadios(quantity, onChange, selected, className) {
+  const radios = [];
 
   for (let index = 0; index < quantity; index += 1) {
-    const backgroundColor = index === selected ? '#69b99d' : '#e4e4e4';
-    buttons.push(
-      <button
-        key={index}
-        type="button"
-        style={{ backgroundColor }}
-        onClick={() => onClick(index)}
-        className={className}
-      />
+    const inputId = `carousel-selection-${index}`;
+    radios.push(
+      <label key={inputId} htmlFor={inputId}>
+        <span className="screen-readers-only">
+          {`Mover para página ${index + 1} do carrossel`}
+        </span>
+        <input
+          tabIndex="0"
+          name="testimony-carousel-selection"
+          type="radio"
+          onChange={() => onChange(index)}
+          id={inputId}
+          className={className}
+          checked={index === selected}
+        />
+      </label>,
     );
   }
-  return buttons;
+  return radios;
 }
 
 export default function Carrousel({ testimonies }) {
@@ -63,8 +70,8 @@ export default function Carrousel({ testimonies }) {
         ))}
       </ul>
 
-      <div className={styles.buttons_wrapper}>
-        {renderButtons(buttonsNumber, setSelected, selected, styles.button)}
+      <div className={styles.radios_wrapper}>
+        {renderRadios(buttonsNumber, setSelected, selected, styles.radio)}
       </div>
     </div>
   );
