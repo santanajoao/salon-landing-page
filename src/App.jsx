@@ -11,12 +11,12 @@ import Footer from './components/Footer';
 
 export default function App() {
   const { isMenuOpen } = useContext(MenuContext);
-  const AppClassName = `App ${isMenuOpen && styles.no_scroll}`;
+  const AppClassName = `App ${isMenuOpen ? styles.no_scroll : ''}`;
 
   return (
     <div className={AppClassName}>
       <Header />
-      <main>
+      <main className={styles.main}>
         <StartSection />
         <AboutSection />
         <ServicesSection />

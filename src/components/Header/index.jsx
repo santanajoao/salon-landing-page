@@ -15,7 +15,7 @@ const navLinks = [
 export default function Header() {
   const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
 
-  const navClassName = `${styles.nav} ${isMenuOpen && styles.visible}`;
+  const navClassName = `${styles.nav} ${isMenuOpen ? styles.visible : ''}`;
 
   return (
     <header className={styles.header}>

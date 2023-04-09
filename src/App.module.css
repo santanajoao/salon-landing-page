@@ -3,14 +3,12 @@
   min-height: 100vh;
 }
 
-.no_scroll {
-  overflow: hidden;
-  height: 100vh;
+.no_scroll .main {
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {
-  .no_scroll {
-    height: auto;
-    min-height: 100vh;
+  .no_scroll .main {
+    display: block;
   }
 }
