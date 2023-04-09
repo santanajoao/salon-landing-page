@@ -2,6 +2,7 @@ import { nanoid } from 'nanoid';
 import React, { useEffect, useState } from 'react';
 import TestimonyCard from '../TestimonyCard';
 import styles from './style.module.css';
+import RadioSelection from '../RadioSelection';
 
 const cardsSpace = 1000;
 
@@ -11,20 +12,15 @@ function renderRadios(quantity, onChange, selected, className) {
   for (let index = 0; index < quantity; index += 1) {
     const inputId = `carousel-selection-${index}`;
     radios.push(
-      <label key={inputId} htmlFor={inputId}>
-        <span className="screen-readers-only">
-          {`Mover para página ${index + 1} do carrossel`}
-        </span>
-        <input
-          tabIndex="0"
-          name="testimony-carousel-selection"
-          type="radio"
-          onChange={() => onChange(index)}
-          id={inputId}
-          className={className}
-          checked={index === selected}
-        />
-      </label>,
+      <RadioSelection
+        key={inputId}
+        id={inputId}
+        name="testimony-carousel-selection"
+        onChange={() => onChange(index)}
+        className={className}
+        checked={index === selected}
+        label={`Mover para página ${index + 1} do carrossel`}
+      />,
     );
   }
   return radios;
